@@ -1,0 +1,1244 @@
+@charset "utf-8";
+
+/* 单车项目 一代聪师 */
+
+
+/* 重置浏览器 */
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body,
+html {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+input,
+select,
+textarea {
+    font-family: "微软雅黑";
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none !important;
+    color: #666;
+    outline: none;
+}
+
+a:hover {
+    cursor: hand;
+}
+
+img {
+    display: block;
+    border: none;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*pc端导航*/
+
+.pcNav {
+    background-color: white;
+}
+
+.pcNav img {
+    margin-top: 16px;
+    height: 63px;
+}
+
+.pcNav ul {
+    border-right: 1px solid #e0e0e0;
+}
+
+.pcNav li {
+    line-height: 100px;
+    height: 100px;
+    float: left;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    border-left: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.pcNav li.active {
+    background-color: #1461cc;
+}
+
+.pcNav li:hover {
+    background-color: #0452bd;
+    border-color: transparent;
+}
+
+.pcNav li.active a,
+.pcNav li:hover a {
+    color: white;
+}
+
+.pcNav li a {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+/*首页banner*/
+
+.banner {
+    height: 560px;
+    width: 100%;
+}
+
+.banner .swiper-slide {
+    background-position: center center;
+    background-size: cover !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*.swiper-pagination-bullet-active{background-color: white;}*/
+
+.video {
+    cursor: pointer;
+}
+
+
+/*线标题*/
+
+.lineTitle {
+    border-top: #dddddd 1px solid;
+}
+
+.lineTitle span {
+    color: #dddddd;
+    -webkit-text-stroke: 6px #fafafa;
+    text-stroke: 6px #fafafa;
+}
+
+.lineTitle span.point2 {
+    -webkit-text-stroke: 6px white;
+    text-stroke: 6px white;
+}
+
+.lineText {
+    margin-top: -24px;
+    position: relative;
+}
+
+
+/*首页业务范围*/
+
+.busBox {
+    border: 1px solid #ccc;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.busBox:after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    background-color: white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.busBox img {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.busBox:hover img {
+    transform: scale(1.2) translate(0, -5px);
+}
+
+.busBox .line {
+    width: 55px;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin: 0 auto;
+}
+
+.busBox.active {
+    background: -webkit-linear-gradient(#4788e3, #1461cc);
+    background: linear-gradient(#4788e3, #1461cc);
+    color: white;
+}
+
+.busBox.active .line {
+    background-color: #0e438c;
+}
+
+
+/* 解决方案 */
+
+.mien_bg,
+.solve_bg,
+.feature_bg {
+    /* background-color: #0f0; */
+    background: url('../img/c01.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: auto !important;
+}
+
+.solve_bg .lineText,
+.mien_bg .lineText,
+.feature_bg .lineText {
+    background-color: transparent !important;
+}
+
+.solve_type {
+    width: 100%;
+    max-width: 500px;
+    max-height: 420px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.solve_type>img {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.solve_type>img:hover {
+    transform: scale(1.05);
+}
+
+.solve_title {
+    color: #363636;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+
+.solve_title::after {
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: #ff8314;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+}
+
+.solve_move {
+    right: 35px;
+    bottom: 20px;
+    width: 90px;
+    height: 34px;
+    border: 1px solid #cccccc;
+    line-height: 34px;
+    text-align: center;
+    color: #999999;
+    cursor: pointer;
+}
+
+.verC::after {
+    content: "";
+    width: 10px;
+    display: inline-block;
+    height: 10px;
+    background: url('../img/icon_arrows.png') no-repeat center center;
+}
+
+
+/* 我们的优势 */
+
+.advantage {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.advantage h4 {
+    font-weight: bold;
+    color: #333333;
+}
+
+
+/* 我们的特色 */
+
+.feature_bg {
+    background-image: url('../img/f01.png');
+}
+
+
+/* 公司风采 */
+
+.mien_bg {
+    background-image: none;
+    background-color: #f7f8fa !important;
+}
+
+.icon_pre {
+    width: 16px;
+    height: 27px;
+    background: url('../img/icon_pre.png') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.icon_next {
+    width: 16px;
+    height: 27px;
+    background: url('../img/icon_next.png') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.swiper-container3,
+.swiper-container2 {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/* 项目流程 */
+
+.h150 {
+    height: 200px;
+}
+
+.process_circle {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: #f0f0f0;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 2px;
+    margin: auto;
+}
+
+.process_pole1 {
+    width: 40px;
+    height: 100px;
+    /* background-color: #000000; */
+    background: url('../img/feature/process_pole.png') no-repeat center center;
+    background-size: contain;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: 20px;
+    position: absolute;
+}
+
+.process_pole2 {
+    height: 80px;
+}
+
+.process_title i {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.process_circle_out {
+    border: 2px solid #ff8313;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -10%;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+
+.process_circle_in {
+    border-radius: 50%;
+    background-color: #ff8313;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+}
+
+.process_item {
+    background: url('../img/feature/process_border_bottom.png') no-repeat left bottom;
+}
+
+.process_border_bottom {
+    background: url('../img/feature/process_border_bottom.png') no-repeat left bottom;
+}
+
+.process_border_bottom2 {
+    background: url('../img/feature/process_border_bottom.png') no-repeat left bottom;
+}
+
+.process_border_bottom3 {
+    background: url('../img/feature/process_border_bottom.png') no-repeat right bottom;
+}
+
+
+/* 新闻资讯 */
+
+.new_title {
+    padding-right: 20px;
+}
+
+.new_title>.blank20 {
+    border-bottom: 1px dashed #ccc;
+}
+
+.new_contain {
+    padding-top: 10px;
+}
+
+.new_contain li {
+    width: 100%;
+    line-height: 36px;
+    color: #858586;
+}
+
+
+/* 底部 */
+
+.foot_bg {
+    background: #171a1d !important;
+}
+
+.foot_bg_border {
+    border-bottom: 1px solid #4a546b;
+}
+
+.foot_bg .tel {
+    color: #1361cc;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.foot_bg .address {
+    color: #7d8699;
+    font-size: 14px;
+    position: relative;
+}
+
+
+/* .foot_bg .address::after {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 20px;
+	background: url('../img/icon_local.png') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+} */
+
+.address img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #111214;
+}
+
+
+/* 智能酒店 */
+
+.hotel_bg {
+    background-image: url('../img/hotel/hotel_bg.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.hotel_title {
+    color: #1461cc;
+    /* line-height: 70px; */
+}
+
+.hotel_border {
+    width: 30px;
+    /* background: #ffffff; */
+    display: inline-block;
+    border-top: 2px solid #ffffff;
+}
+
+.hotel_bar {
+    width: 100%;
+    height: 30px;
+    background-color: #ff9c43;
+}
+
+.hotel_img {
+    margin-bottom: -30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 在家新增 */
+
+.business_bg {
+    background: url('../img/hotel/business_bg.png') no-repeat center bottom;
+    background-size: cover;
+    width: 100%;
+}
+
+.tab-content {}
+
+.business_title {
+    color: #1361cc;
+    font-size: 26px;
+    line-height: 50px;
+    font-weight: bold;
+    animation: business_title 0.5s;
+    -moz-animation: business_title 0.5s;
+    -webkit-animation: business_title 0.5s;
+    -o-animation: business_title 0.5s;
+}
+
+@keyframes business_title {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes business_title {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.business_item li {
+    color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tab-pane {
+    padding-left: 60px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+}
+
+.c999.business_current {
+    color: #333333 !important;
+    position: relative;
+}
+
+.c999.business_current::after {
+    content: "";
+    background-color: #ff8313;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -14px;
+    width: 60px;
+    height: 3px;
+    display: inline-block;
+}
+
+
+/* 功能特色 */
+
+.feature_item {
+    margin: auto;
+    width: 280px;
+    height: 280px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    cursor: pointer;
+}
+
+.feature_item {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.feature_item:hover {
+    transform: scale(1.1) translate(0px, 0px);
+}
+
+.contact_bg {
+    width: 100%;
+    background: url('../img/hotel/contact_bg.png')
+}
+
+.contact_bg .container {
+    margin: auto;
+}
+
+.feature_news p {
+    text-indent: 2em;
+    line-height: 34px;
+}
+
+
+/*公共样式*/
+
+.transform_scale {
+    cursor: pointer;
+}
+
+.transform_scale img {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.transform_scale:hover img {
+    transform: scale(1.1) translate(0px, 0px);
+}
+
+.overflowH {
+    overflow: hidden;
+}
+
+.borderNone {
+    border: none !important;
+}
+
+.tran3 {
+    transition: all 0.3s ease;
+}
+
+.f_bold {
+    font-weight: bold;
+}
+
+.borderRadius0 {
+    border-radius: 0 !important;
+}
+
+.radius100 {
+    border-radius: 100px !important;
+}
+
+.shadowNone {
+    box-shadow: none !important;
+}
+
+.heightAuto {
+    height: auto !important;
+}
+
+.widthAuto {
+    width: auto !important;
+}
+
+.marginCenter {
+    margin: 0 auto;
+}
+
+.margin0 {
+    margin: 0 !important;
+}
+
+.marginT10 {
+    margin-top: 10px !important;
+}
+
+.marginT20 {
+    margin-top: 20px !important;
+}
+
+.marginB10 {
+    margin-bottom: 10px !important;
+}
+
+.marginB20 {
+    margin-bottom: 20px !important;
+}
+
+.padding10 {
+    padding: 10px !important;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.padding30 {
+    padding: 30px;
+}
+
+.paddingT10 {
+    padding-top: 10px !important;
+}
+
+.paddingB10 {
+    padding-bottom: 10px !important;
+}
+
+.paddingR30 {
+    padding-right: 30px !important;
+}
+
+.paddingL30 {
+    padding-left: 30px !important;
+}
+
+.lineH2 {
+    line-height: 2;
+}
+
+.padding0 {
+    padding: 0 !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.textC {
+    text-align: center;
+}
+
+.textR {
+    text-align: right;
+}
+
+.textL {
+    text-align: left;
+}
+
+.verC {
+    vertical-align: center;
+}
+
+.displayIB {
+    display: inline-block;
+}
+
+
+/*溢出不换行*/
+
+.oneIn {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.oneIn_1 {
+    -webkit-line-clamp: 1;
+}
+
+.oneIn_2 {
+    -webkit-line-clamp: 2;
+}
+
+.oneIn_3 {
+    -webkit-line-clamp: 3;
+}
+
+.oneIn_10 {
+    -webkit-line-clamp: 10;
+}
+
+
+/*blank*/
+
+.blank0,
+.blank5,
+.blank10,
+.blank20,
+.blank30,
+.blank50,
+.blank150 {
+    clear: both;
+    display: block;
+    font-size: 1px;
+    overflow: hidden;
+}
+
+.blank0 {
+    height: 0px;
+}
+
+.blank5 {
+    height: 5px;
+}
+
+.blank10 {
+    height: 10px;
+}
+
+.blank20 {
+    height: 20px;
+}
+
+.blank30 {
+    height: 30px;
+}
+
+.blank50 {
+    height: 50px;
+}
+
+.lazy {
+    width: 100% !important;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+
+/*文字*/
+
+.f_10 {
+    font-size: 10px !important;
+    ;
+}
+
+.f_12 {
+    font-size: 12px !important;
+}
+
+.f_14 {
+    font-size: 14px !important;
+}
+
+.f_16 {
+    font-size: 16px !important;
+}
+
+.f_18 {
+    font-size: 18px !important;
+}
+
+.f_20 {
+    font-size: 20px !important;
+}
+
+.f_24 {
+    font-size: 24px !important;
+}
+
+.f_30 {
+    font-size: 30px !important;
+}
+
+.f_35 {
+    font-size: 35px !important;
+}
+
+.f_40 {
+    font-size: 40px !important;
+}
+
+.f_45 {
+    font-size: 45px !important;
+}
+
+.f_50 {
+    font-size: 50px !important;
+}
+
+.f_60 {
+    font-size: 60px !important;
+}
+
+.f_w {
+    font-weight: bold !important;
+}
+
+
+/*系统色*/
+
+.cWhite {
+    color: white !important;
+}
+
+.bgWhite {
+    background-color: white !important;
+}
+
+.c333 {
+    color: #333 !important;
+}
+
+.bg333 {
+    background-color: #333 !important;
+}
+
+.c999 {
+    color: #999 !important;
+}
+
+.bgF7 {
+    background-color: #f7f8fa !important;
+}
+
+.cTran {
+    color: transparent !important;
+}
+
+.bgTran {
+    background-color: transparent !important;
+}
+
+.cRed {
+    color: #eb474c !important;
+}
+
+.bgRed {
+    background-color: #eb474c !important;
+}
+
+.bgEEE {
+    background-color: #eee !important;
+}
+
+.cff8314 {
+    color: #ff8314;
+}
+
+
+/*媒体判断*/
+
+@media (max-width:1199px) {
+    .banner {
+        height: 400px;
+    }
+    .pcNav img {
+        margin-top: 16px;
+        height: 56px;
+    }
+    .pcNav li {
+        width: 80px;
+        line-height: 90px;
+        height: 90px;
+    }
+}
+
+
+/*小屏电脑*/
+
+@media (max-width:991px) {
+    .banner {
+        height: 350px;
+    }
+    .pcNav img {
+        margin-top: 16px;
+        height: 40px;
+    }
+    .pcNav li {
+        width: 70px;
+        line-height: 70px;
+        height: 70px;
+        font-size: 12px;
+    }
+    .hotel_title {
+        color: #ffffff;
+    }
+    .hotel_img {
+        margin-bottom: 0px;
+    }
+}
+
+
+/*平板*/
+
+@media (max-width:767px) {
+    .f_12 {
+        font-size: 10px !important;
+    }
+    .f_14 {
+        font-size: 12px !important;
+    }
+    .f_16 {
+        font-size: 14px !important;
+    }
+    .f_18 {
+        font-size: 16px !important;
+    }
+    .f_20 {
+        font-size: 18px !important;
+    }
+    .f_24 {
+        font-size: 20px !important;
+    }
+    .f_30 {
+        font-size: 24px !important;
+    }
+    .f_35 {
+        font-size: 30px !important;
+    }
+    .f_40 {
+        font-size: 35px !important;
+    }
+    .f_45 {
+        font-size: 40px !important;
+    }
+    .f_50 {
+        font-size: 45px !important;
+    }
+    .f_60 {
+        font-size: 50px !important;
+    }
+    .blank5 {
+        height: 3px;
+    }
+    .blank10 {
+        height: 8px;
+    }
+    .blank20 {
+        height: 10px;
+    }
+    .blank30 {
+        height: 20px;
+    }
+    .blank50 {
+        height: 40px;
+    }
+    .banner {
+        height: 270px;
+    }
+    .hotel_title {
+        color: #ffffff;
+    }
+    .hotel_img {
+        margin-bottom: 0px;
+    }
+    nav img {
+        height: 40px;
+    }
+    nav .navbar-brand {
+        padding-top: 5px;
+    }
+    nav.navbar-default {
+        background-color: transparent;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav {
+        margin-bottom: 0;
+    }
+    .navbar-default .navbar-nav>li>a {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        margin-right: 0;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        color: white;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        border-bottom: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .tab-pane {
+        padding-left: 0px;
+    }
+}
+
+
+/*以i6p 为分界线，兼容以下屏幕*/
+
+@media (max-width:415px) {
+    .f_16 {
+        font-size: 13px !important;
+    }
+    .f_18 {
+        font-size: 14px !important;
+    }
+    .f_20 {
+        font-size: 15px !important;
+    }
+    .f_24 {
+        font-size: 17px !important;
+    }
+    .f_30 {
+        font-size: 19px !important;
+    }
+    .f_35 {
+        font-size: 20px !important;
+    }
+    .f_40 {
+        font-size: 21px !important;
+    }
+    .f_45 {
+        font-size: 22px !important;
+    }
+    .f_50 {
+        font-size: 23px !important;
+    }
+    .f_60 {
+        font-size: 20px !important;
+    }
+    .blank5 {
+        height: 2px;
+    }
+    .blank10 {
+        height: 5px;
+    }
+    .blank20 {
+        height: 10px;
+    }
+    .blank30 {
+        height: 20px;
+    }
+    .blank50 {
+        height: 30px;
+    }
+    .banner {
+        height: 190px;
+    }
+    .hotel_title {
+        color: #ffffff;
+    }
+    .hotel_img {
+        margin-bottom: 0px;
+    }
+    .tab-pane {
+        padding-left: 0px;
+    }
+}
+
+
+/*i6*/
+
+@media (max-width:375px) {
+    .banner {
+        height: 170px;
+    }
+    .hotel_img {
+        margin-bottom: 0px;
+    }
+    .tab-pane {
+        padding-left: 0px;
+    }
+}
+
+
+/*安卓*/
+
+@media (max-width:360px) {
+    .banner {
+        height: 170px;
+    }
+    .tab-pane {
+        padding-left: 0px;
+    }
+}
+
+
+/*i5*/
+
+@media (max-width:320px) {
+    .banner {
+        height: 150px;
+    }
+    .tab-pane {
+        padding-left: 0px;
+    }
+}
