@@ -571,6 +571,15 @@ footer {
     }
 }
 
+.business_item ul {
+    /* padding-left: 16px; */
+    margin-left: 16px;
+}
+
+.business_item ul li {
+    list-style-type: disc
+}
+
 .business_item li {
     color: #666666;
     font-size: 16px;
