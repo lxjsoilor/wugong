@@ -596,18 +596,21 @@ footer {
 
 .tab-pane {
     padding-left: 60px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 40px rgba(11, 53, 101, 0.08);
     background-color: #ffffff;
     width: 90%;
     margin: auto;
 }
 
-.c999.business_current {
+.business_current {
     color: #333333 !important;
     position: relative;
 }
+.business_current>a {
+    color: #333333 !important;
+}
 
-.c999.business_current::after {
+.business_current::after {
     content: "";
     background-color: #ff8313;
     position: absolute;
@@ -618,6 +621,7 @@ footer {
     width: 60px;
     height: 3px;
     display: inline-block;
+    z-index: 1000;
 }
 
 

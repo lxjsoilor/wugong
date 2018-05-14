@@ -19,7 +19,6 @@
 	<div style="color；red; text-align:center;background:#FF8200; color:#fff" >您的IE版本过低,请升级您的浏览器版本！</div>
 <![endif]-->
     <style>
-
     </style>
 </head>
 
@@ -29,7 +28,7 @@
         <div class="container clearfix">
             <img src="img/logo.png" class="pull-left" />
             <ul class="clearfix pull-right">
-                <li class="active"><a href="#">首 页</a></li>
+                <li class="active"><a href="./index.html">首 页</a></li>
                 <li><a href="./index.html#scope">业务范围</a></li>
                 <li><a href="./index.html#solveType">解决方案</a></li>
                 <li><a href="./index.html#ourAdvantage">五工优势</a></li>
@@ -53,7 +52,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right" style="margin-top:0">
-                        <li><a href="#">首 页</a></li>
+                        <li><a href="./index.html">首 页</a></li>
                         <li><a href="./index.html#scope">业务范围</a></li>
                         <li><a href="./index.html#solveType">解决方案</a></li>
                         <li><a href="./index.html#ourAdvantage">五工优势</a></li>
@@ -691,7 +690,8 @@
                 <div style="width:100%;">
                     <!-- <iframe width="100%" height="100%;" src='http://player.youku.com/embed/XODMzNTkzNTI4' frameborder=0 'allowfullscreen'></iframe> -->
                     <!-- <embed width="100%" src='http://player.youku.com/player.php/sid/XMzU5ODUzNzI4MA==/v.swf' allowFullScreen='true' quality='high' width='480' height='500' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed> -->
-                    <iframe height=498 width="100%" style="overflow:hidden;" src='https://player.youku.com/embed/XMzU5ODUzNzI4MA==' frameborder=0 'allowfullscreen'></iframe>
+                    <iframe height=498 width="100%" style="overflow:hidden;" src='https://player.youku.com/embed/XMzU5ODUzNzI4MA==' frameborder=0
+                        'allowfullscreen'></iframe>
                 </div>
             </div>
         </div>
@@ -741,7 +741,7 @@
     });
 
     //业务范围 hover操作
-    $('.busBox').on('mouseenter', function() {
+    $('.busBox').on('mouseenter', function () {
         var xu = $(this).parent().index(); //序号
 
         //自己修改
@@ -758,7 +758,7 @@
         });
 
         //其他修改
-        $('.busBox').each(function(i, val) {
+        $('.busBox').each(function (i, val) {
             if (i != xu) {
                 var nearSrc = $(val).find('img').attr('src');
                 $(val).removeClass('active');
