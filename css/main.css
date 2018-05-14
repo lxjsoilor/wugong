@@ -732,6 +732,10 @@ footer {
     margin-bottom: 20px !important;
 }
 
+.padding5 {
+    padding: 5px !important;
+}
+
 .padding10 {
     padding: 10px !important;
 }
@@ -950,6 +954,11 @@ footer {
     font-weight: bold !important;
 }
 
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.80);
+}
 
 /*系统色*/
 
