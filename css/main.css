@@ -160,6 +160,20 @@ ul {
 
 /*首页业务范围*/
 
+.icon_play {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.icon_play:hover {
+    transform: scale(1.1)
+}
+
 .busBox {
     border: 1px solid #ccc;
     width: 100%;
@@ -290,6 +304,11 @@ ul {
 .advantage h4 {
     font-weight: bold;
     color: #333333;
+}
+
+.advantage p {
+    padding-top: 4px;
+    line-height: 26px;
 }
 
 /* 我们的特色 */
