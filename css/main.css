@@ -559,6 +559,12 @@ footer {
     width: 100%;
 }
 
+.business_bg2 {
+    background: url('../img/o2o/business_bg.png') no-repeat center bottom;
+    background-size: cover;
+    width: 100%;
+}
+
 .tab-content {}
 
 .business_title {
@@ -963,6 +969,9 @@ footer {
 
 .f_w {
     font-weight: bold !important;
+}
+.lh30 {
+    line-height: 30px !important; 
 }
 
 .small-font {
