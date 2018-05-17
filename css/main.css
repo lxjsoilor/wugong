@@ -618,6 +618,9 @@ footer {
     width: 90%;
     margin: auto;
 }
+.tab-pane-o2o {
+    box-shadow: 0px 0px 40px rgba(169, 91, 28, 0.08) !important;
+}
 
 .business_current {
     color: #333333 !important;
