@@ -64,13 +64,13 @@
 }
 
 .izl-rmenu .btn-phone .phone {
-    background-color: #ff8200;
+    background-color: #1461cc;
     position: absolute;
     width: 160px;
     left: -158px;
     top: -1px;
-    line-height: 70px;
-    height: 70px;
+    line-height: 80px;
+    height: 80px;
     color: #FFF;
     font-size: 18px;
     text-align: center;
