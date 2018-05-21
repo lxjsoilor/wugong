@@ -5184,6 +5184,7 @@ a:hover {
 
 .pcNav {
     background-color: white;
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 }
 
 .pcNav img {
@@ -5193,6 +5194,7 @@ a:hover {
 
 .pcNav ul {
     border-right: 1px solid #e0e0e0;
+    margin-bottom: 0px !important;
 }
 
 .pcNav li {
