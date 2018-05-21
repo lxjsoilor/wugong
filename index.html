@@ -68,17 +68,46 @@
     </div>
 
 
+    
+    <style>
+        .hotel_more {
+            position: absolute;
+            left: 10%;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+        .hotel_more_btn {
+            background-color: #2e7be7;
+            color: #ffffff;
+            text-align: center;
+            width: 126px;
+            height: 38px;
+            line-height: 38px;
+            border-radius: 2px;
+        }
 
+    </style>
     <!-- Swiper -->
     <div class="swiper-container banner">
         <!--幻灯片主内容-->
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url(./img/hj1.jpg);">
-                <!--<a href="javascript：void(0);"></a>-->
             </div>
-            <!-- <div class="swiper-slide" style="background-image: url(./img/hj2.jpg);"> -->
-            <!--<a href="javascript：void(0);"></a>-->
-            <!-- </div> -->
+            <div class="swiper-slide" style="background-image: url(./img/hj2.jpg);">
+                <a href="./hotel.html"></a>
+                <div class="hotel_more textL cWhite f_18">
+                    <!-- <div class="blank50"></div>
+                    <div class="blank50 hidden-sm hidden-xs"></div>
+                    <p class="f_40">智 能 酒 店 解 决 方 案</p>
+                    <div class="blank20"></div>
+                    <p>涉及酒店IT和通讯设施系统、酒店应用生态系统</p>
+                    <div class="blank10"></div>
+                    <p>一键接入，稳定安全</p>
+                    <div class="blank30"></div>
+                    <div class="hotel_more_btn f_12">了解更多</div> -->
+                </div>
+            </div>
         </div>
         <!--底部切换按钮-->
         <div class="swiper-pagination"></div>
@@ -587,7 +616,7 @@
             <div class="blank50"></div>
             <div class="col-lg-4">
                 <div class="new_title">
-                    <h4 class="f_w c333">企业新闻</h4>
+                    <h4 class="f_w c333"><a href="./news/newitem.html">企业新闻</a></h4>
                 </div>
                 <div class="new_contain">
                     <ul>
@@ -723,7 +752,7 @@
         loop: false,
 
         //自动轮播时间：3秒钟
-        autoplay: 3000,
+        autoplay: 10000,
         //触发监听后 继续播放 false是继续
         autoplayDisableOnInteraction: false,
 
