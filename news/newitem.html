@@ -13,7 +13,7 @@
     <meta name="description" content="app开发知识库呈现iOS APP开发、Android APP开发、HTML5 APP开发、WeChat微信APP开发知识，介绍APP的开发与调试的相关知识和经验。">
 
     <!-- core CSS -->
-    <link href="./news/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link href="./news/css/font-awesome.min.css" rel="stylesheet">
     <link href="./news/css/animate.min.css" rel="stylesheet" media="screen and (min-width:768px)">
     <link href="./news/css/prettyPhoto.css" rel="stylesheet">
@@ -21,18 +21,9 @@
     <link href="./news/css/responsive.css" rel="stylesheet">
     <link href="./news/css/idangerous.swiper.css" rel="stylesheet">
     <link href="./news/css/product.css" rel="stylesheet">
-    <script charset="utf-8" src="./news/js/v.js"></script>
-    <script src="./news/js/hm.js"></script>
-    <script src="./news/js/jquery.js"></script>
-    <script src="./news/js/bootstrap.min.js"></script>
-    <script src="./news/js/jquery.prettyPhoto.js"></script>
-    <script src="./news/js/jquery.isotope.min.js"></script>
-    <script src="./news/js/main.js"></script>
-    <script src="./news/js/wow.min.js"></script>
-    <script src="./news/js/idangerous.swiper.min.js"></script>
-    <script src="./news/js/app_product.js"></script>
+    <link rel="stylesheet" href="../css/sideButton.css">
+
     <!--侧栏二维码 -->
-    <script src="./news/js/zzsc.js"></script>
     <!--[if lt IE 9]>
     <script src="./Publijsome/mc/js/html5shiv.js"></script>
     <script src="./Publijsome/mc/js/respond.min.js"></script>
@@ -279,9 +270,19 @@
     </footer>
 
 
-
+    <script charset="utf-8" src="./news/js/v.js"></script>
+    <script src="./news/js/hm.js"></script>
+    <script src="./news/js/jquery.js"></script>
+    <script src="./news/js/bootstrap.min.js"></script>
+    <script src="./news/js/jquery.prettyPhoto.js"></script>
+    <script src="./news/js/jquery.isotope.min.js"></script>
+    <script src="./news/js/main.js"></script>
+    <script src="./news/js/wow.min.js"></script>
+    <script src="./news/js/idangerous.swiper.min.js"></script>
+    <script src="./news/js/app_product.js"></script>
+    <script src="../js/sideButton.js"></script>
     <script type="text/javascript">
-        $("document").ready(function() {
+        $("document").ready(function () {
 
             /*Windows Phone 8 и Internet Explorer 10*/
             if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
@@ -295,7 +296,7 @@
             }
 
 
-            $("#flink h3").on("click", function() {
+            $("#flink h3").on("click", function () {
                 if ($(this).siblings().children('ul').css("display") == 'none') {
                     $(this).siblings().children('ul').slideDown();
                 } else {
@@ -303,7 +304,7 @@
                 }
             });
 
-            $('.dropdown').on('click', '.hidden-lg.hidden-md.hidden-sm', function() {
+            $('.dropdown').on('click', '.hidden-lg.hidden-md.hidden-sm', function () {
                 $(this).parents('.dropdown').toggleClass('open');
                 $(this).parents('.dropdown').siblings('.dropdown').removeClass('open');
                 return false;
