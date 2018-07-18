@@ -123,8 +123,10 @@
 
 
 	<!--1-->
-	<div class="togetherShareBanner class banner_bg relative">
-		<img src="./images/banner.jpg" alt="">
+	<div class="togetherShareBanner class banner_bg relative" data-toggle="modal" data-target=".bs-example-modal-lg">
+		<a href="javascript:;">
+			<img src="./images/banner.jpg" alt="">
+		</a>
 		<!-- <div class="absolute banner_title">
 			<div class="blank50 hidden-xs hidden-sm hidden-md"></div>
 			<div class="blank30 hidden-xs hidden-sm hidden-md"></div>
@@ -205,10 +207,10 @@
 						<div class="blank30"></div>
 						<p class="f_24">共享烘干机</p>
 						<div class="blank30"></div>
-						<p class="f_16 oneIn oneIn_3">自助式服务，实现从卖产品到卖服务的转型，开创共享烘衣新模式</p>
+						<p class="f_16 oneIn oneIn_3 line27">自助式服务，实现从卖产品到卖服务的转型，开创共享烘衣新模式</p>
 						<div class="blank30"></div>
 						<div class="blank30"></div>
-						<button class="f_16 cWhite  bounceIn animated">了解更多</button>
+						<button class="f_16 cWhite  bounceIn animated"  data-toggle="modal" data-target=".bs-example-modal-lg">了解更多</button>
 					</div>
 				</div>
 				<div class="blank20"></div>
@@ -233,10 +235,10 @@
 						<div class="blank30"></div>
 						<p class="f_24">共享洗衣机</p>
 						<div class="blank30"></div>
-						<p class="f_16 oneIn oneIn_3">支持传统洗衣机智能化升级，手机APP一键控制，适用于酒店、出租公寓和大学生住宿区等场所</p>
+						<p class="f_16 oneIn oneIn_3 line27">支持传统洗衣机智能化升级，手机APP一键控制，适用于酒店、出租公寓和大学生住宿区等场所</p>
 						<div class="blank30"></div>
 						<div class="blank30"></div>
-						<button class="f_16 cWhite  bounceIn animated">了解更多</button>
+						<button class="f_16 cWhite  bounceIn animated"  data-toggle="modal" data-target=".bs-example-modal-lg">了解更多</button>
 					</div>
 				</div>
 				<div class="blank20"></div>
@@ -261,10 +263,10 @@
 						<div class="blank30"></div>
 						<p class="f_24">共享净化器</p>
 						<div class="blank30"></div>
-						<p class="f_16 oneIn oneIn_3">一站式智能服务，让传统产品更具市场竞争力。满足于私人会所、KTV和酒店等多种场景</p>
+						<p class="f_16 oneIn oneIn_3 line27">一站式智能服务，让传统产品更具市场竞争力。满足于私人会所、KTV和酒店等多种场景</p>
 						<div class="blank30"></div>
 						<div class="blank30"></div>
-						<button class="f_16 cWhite  bounceIn animated">了解更多</button>
+						<button class="f_16 cWhite  bounceIn animated"  data-toggle="modal" data-target=".bs-example-modal-lg">了解更多</button>
 					</div>
 				</div>
 				<div class="blank20"></div>
@@ -289,10 +291,10 @@
 						<div class="blank30"></div>
 						<p class="f_24">共享运动设备</p>
 						<div class="blank30"></div>
-						<p class="f_16 oneIn oneIn_3">提供共享跑步机、发球机等运动设备系统开发。快速上线，快速运营，支持社区、酒店等多场所覆盖</p>
+						<p class="f_16 oneIn oneIn_3 line27">提供共享跑步机、发球机等运动设备系统开发。快速上线，快速运营，支持社区、酒店等多场所覆盖</p>
 						<div class="blank30"></div>
 						<div class="blank30"></div>
-						<button class="f_16 cWhite  bounceIn animated">了解更多</button>
+						<button class="f_16 cWhite  bounceIn animated"  data-toggle="modal" data-target=".bs-example-modal-lg">了解更多</button>
 					</div>
 				</div>
 				<div class="blank20"></div>
@@ -444,7 +446,7 @@
 						<div class="blank10"></div>
 						<p class="c999 f_16">快车、专车、出租车、顺风车、城际拼车等多种模式供您选择</p>
 						<div class="blank20"></div>
-						<button>了解更多</button>
+						<button><a href="#" style="color: #407af1">了解更多</a></button>
 						<div class="blank10"></div>
 					</div>
 				</div>
@@ -454,9 +456,9 @@
 					<img src="./images/d2.png" alt="">
 					<div>
 						<div class="blank30"></div>
-						<p class="app_title f_24">网约车</p>
+						<p class="app_title f_24">共享单车</p>
 						<div class="blank10"></div>
-						<p class="c999 f_16">快车、专车、出租车、顺风车、城际拼车等多种模式供您选择</p>
+						<p class="c999 f_16">打造“单车+APP系统+智能锁+电子围栏”一站式解决方案</p>
 						<div class="blank20"></div>
 						<button>了解更多</button>
 						<div class="blank10"></div>
@@ -758,6 +760,88 @@
 		</div>
 		<div class="btn btn-top" style="display: none;"><i class="fa fa-chevron-up"></i></div>
 	</div>
+
+
+	<!-- 弹出框 -->
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg" style="width: 520px;" role="document">
+		<div class="modal-content">
+			<div class="apply_modal_title">
+				<img src="./images/apply_logo.png" alt="">
+			</div>
+			<div class="apply_modal_form">
+				<div class="row">
+					<div class="col-sm-4 form_left f_16">姓名</div>
+					<div class="col-sm-8 form_right">
+						<input type="text">
+					</div>
+					<div class="col-sm-4 form_left f_16">手机号码</div>
+					<div class="col-sm-8 form_right">
+						<input type="text">
+					</div>
+					<div class="col-sm-4 form_left f_16 form_textarea">备注</div>
+					<div class="col-sm-8 form_right form_textarea">
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>
+					<div class="col-sm-4 form_left f_16"></div>
+					<div class="col-sm-8 form_right">
+						<button class="btn">立即申请</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<style>
+		.apply_modal_title {
+			width: 100%;
+			height: 80px;
+			background-color: #3a76ff;
+			position: relative;
+		}
+		.apply_modal_title img {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			top: 0px;
+			margin: auto;
+		}
+		.apply_modal_form {
+			padding-top: 20px;
+		}
+		.apply_modal_form .form_left {
+			text-align: right;
+			height: 55px;
+			line-height: 30px;
+			color: #333333;
+		}
+		.apply_modal_form .form_right {
+			height: 55px;
+			padding-left: 0px;
+		}
+		.apply_modal_form .form_right input,.apply_modal_form .form_right textarea,.apply_modal_form .form_right button {
+			border: 1px solid #333333;
+			height: 33px;
+			border-radius: 4px;
+			width: 70%;
+		}
+		.apply_modal_form .form_right textarea {
+			min-height: 80px;
+		}
+		.apply_modal_form .form_textarea {
+			height: 100px;
+		}
+		.apply_modal_form textarea {
+			resize: none;
+		}
+		.apply_modal_form .form_right button {
+			color: #ffffff;
+			background-color: #3a76ff;
+			font-size: 16px;
+			border: none;
+		}
+	</style>
 </body>
 <script>
 	// 导航弹出
@@ -771,6 +855,8 @@
 		$('.busBox_hover').removeClass('current');
 		$(this).children('.busBox_hover').addClass('current');
 	});
+
+
 </script>
 
 </html>
